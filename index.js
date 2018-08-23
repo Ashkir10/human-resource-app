@@ -1,6 +1,10 @@
 
 let http = require("http");
 let employeeService = require("./lib/employees");
+require('./lib/connection');
+require('./bin/populate_db');
+
+
 
 let responder = require("./lib/responseGenerator");
 let staticFile = responder.staticFile("/public");
